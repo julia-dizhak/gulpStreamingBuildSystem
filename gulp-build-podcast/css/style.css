@@ -1,0 +1,17 @@
+body {
+  background: #ccc;
+  /*font: 11px Arial;*/
+  /*font-style: italic;*/
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 50px auto;
+  text-align: center;
+  /*width: 1000px;*/
+  width: 1200px;
+}
+div {
+  margin: 10px;
+}

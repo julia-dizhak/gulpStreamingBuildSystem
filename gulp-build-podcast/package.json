@@ -1,0 +1,26 @@
+{
+  "name": "gulp-build-podcast",
+  "version": "0.1.0",
+  "description": "setting gulp by build podcast",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "keywords": [
+    "demo",
+    "node",
+    "gulp"
+  ],
+  "author": "Julia Dizhak",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2"
+  }
+}

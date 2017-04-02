@@ -1,0 +1,5 @@
+*.git
+*.DS_Store
+*.idea/
+gulp-build-podcast/node_modules/
+gulp-build-podcast/assets/
