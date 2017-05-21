@@ -3,6 +3,7 @@ A demonstration how to use and install Gulp, the streaming build system.
 <ul>
 <li>http://gulpjs.com/</li>  
 <li>https://build-podcast.com/</li>  
+<li>from book Getting started with Gulp by Travis Maynard</li>  
 </ul>
 
 <h2>What is gulp</h2>
@@ -30,6 +31,18 @@ A demonstration how to use and install Gulp, the streaming build system.
   <li></li>
 </ul>
 
+<h2>Anatomy of a gulpfile</h2>
+<p>Gulp started with 4 main methods </p>
+<ul>
+  <li>the task(string, function) method is a basic wrapper for which we create our tasks. A string value representing the name of task.</li>  
+  <li>the .src(string || array) method is our input, or how we gain access to the source files that we plan are modifying.</li>
+  <li>the .watch(string, array) method is used to specifically look for changes on our files.</li>
+  <li>the .dest(string) method is used to set the output destination of your processed file.</li>
+  <li>the .pipe(function) method will allow us to pipe together smaller single-purpose plugins or applications into a pipechain.</li>  
+  <li>the .parallel() and .series() methods as a way to easily control whether your task are ran together - all at once, on in a sequence - one after the other</li>
+  
+</ul>
+<p></p>
 
 <h2></h2>
 <p></p>
