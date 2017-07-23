@@ -9,8 +9,6 @@
 }
 body {
   background: var(--grey);
-  /*font: 11px Arial;*/
-  /*font-style: italic;*/
   color: #000;
   font-family: Arial, sans-serif;
 }
