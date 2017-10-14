@@ -28,23 +28,22 @@ A demonstration how to use and install Gulp, the streaming build system.
   <li>mkdir - making a directory</li>
   <li>touch file_name - creating a file on Mac </li>
   <li>sudo mkdir folder_name </li>
-  <li></li>
 </ul>
 
 <h2>Anatomy of a gulpfile</h2>
 <p>Gulp started with 4 main methods </p>
-<ol>
+<ul>
   <li>task(string, function) method is a basic wrapper for which we create our tasks. A string value representing the name of task.</li>
   <li>.src(string || array) method is our input, or how we gain access to the source files that we plan are modifying.</li>
   <li>.watch(string, array) method is used to specifically look for changes on our files.</li>
   <li>.dest(string) method is used to set the output destination of your processed file.</li>
   <li>.pipe(function) method will allow us to pipe together smaller single-purpose plugins or applications into a pipechain.</li>
   <li>.parallel() and .series() methods as a way to easily control whether your task are ran together - all at once, on in a sequence - one after the other</li>
-</ol>
-<p></p>
+</ul>
+<br>
 
 <h2>Node.js modules</h2>
-<p>Statis server</p>
+<p>Static server</p>
 <p>Browser sync - handle browser refreshing and sync up every action that is performed on your pages across any device po your local network.</p>
 <p>Browserify - bundle modules</p>
-<p>gulp-plumber, beeper - resolving issues</p>
+<p>Gulp-plumber, beeper - resolving issues</p>
