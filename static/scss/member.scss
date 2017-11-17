@@ -1,0 +1,133 @@
+:root {
+  // color palitra
+  --color-default: #789e56;
+  --color-primary: #E7EBF0;
+  --color-primary100: #B9C5CE;
+
+  --color-secondary: #ABB8C8;
+  --color-secondary100: #9DA1A8;
+
+  --color-tertiary: #D2AFA5;
+  --color-tertiary100: #9E6C5E;
+
+  --color-font: #585C61;
+
+  --border-radius: 4px;
+
+  --spacing: 30px;
+  --gutter: 5px;
+
+  --tablet: 768px;
+}
+
+body {
+  font: 400 100%/120% 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: var(--color-font);
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  @media (max-width: var(--tablet)) {
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.member {
+  padding: var(--spacing);
+  //background: lighten(#E7EBF0, 5%);
+  li {
+    margin: 0 0 var(--spacing) 0;
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.member-item {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 0 0 1px #fff inset;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+
+  .wrapper {
+    //margin: 40px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
+
+    box-shadow: 0 0 0 1px #fff inset;
+    background: var(--color-primary);
+    border-radius: 6px;
+  }
+
+  .content {
+    padding: 5px 15px 0 15px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    align-content: space-between;
+    border-bottom: 1px solid var(--color-primary);
+    background: lighten(#B9C5CE, 20%);
+    background: #fff;
+
+    border-radius: 6px 6px 0 0;
+  }
+
+  .info {
+    padding: 10px 40px;
+  }
+
+  .numbers {
+    display: flex;
+    flex-flow: row-reverse;
+    border-bottom: 1px solid darken(#E7EBF0, 1%);
+    font-size: 13px;
+
+    div {
+      padding: 10px 15px;
+    }
+  }
+
+  .github-profile {
+    display: flex;
+    //color: var(--color-tertiary100);
+    font-size: 14px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .name {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+  }
+  .message {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+  }
+  .rating {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--color-default);
+  }
+
+  .avatar {
+    border-radius: 50%;
+    border-width: 2px 4px;
+    border-style: dashed;
+    border-color: var(--color-primary100);
+    position: absolute;
+    transform: translateY(15px);
+  }
+  .avatar-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  .project {
+
+  }
+}

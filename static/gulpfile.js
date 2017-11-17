@@ -40,19 +40,16 @@ function errorLog(error) {
 gulp.task('images', function() {
   return gulp.src('images/*')
          .pipe(imagemin())
-         .pipe(gulp.dest('assets/images'));
+         .pipe(gulp.dest('assets/dest/images'));
 });
 
-// Process styles
 gulp.task('styles', function() {
-  return scss('scss/*.scss', {
-      style: 'compressed',
-      loadPath: ['scss/*.scss']})
-      .on('error', errorLog)
-      .pipe(concat('styles.css'))
+  return gulp.src('scss/*.scss')
+      .pipe(scss().on('error', errorLog))
+      //.pipe(concat('styles.css'))
       .pipe(minifyCSS())
       .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('assets/css'))
+      .pipe(gulp.dest('assets/dest/css'))
       .pipe(livereload());
 });
 
@@ -64,11 +61,11 @@ gulp.task('scripts', function() {
           errorHandler: errorLog
       }))
       .pipe(concat('all.js'))
-      //.pipe(jshint.reporter('default'))
+      .pipe(jshint.reporter('default'))
       .pipe(uglify())
       .pipe(sourcemaps.write('assets/maps'))
       .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('assets/js'));
+      .pipe(gulp.dest('assets/dest/js'));
 });
 
 // writing a server task
@@ -91,10 +88,9 @@ gulp.task('browsersync', function(cb) {
 
 // Watch files for changes
 gulp.task('watch', function() {
-
   livereload.listen();
 
-  gulp.watch('/scss/*.scss', ['styles']);
+  gulp.watch('scss/*.scss', ['styles']);
   gulp.watch('js/*.js', ['scripts']);
   gulp.watch('images/*', ['images']);
 });

@@ -1,26 +1,27 @@
-# gulpStreamingBuildSystem
-A demonstration how to use and install Gulp, the streaming build system.
+# Gulp - streaming build system
+
+## A demonstration how to use and install Gulp, the streaming build system.
 <ul>
 <li>http://gulpjs.com/</li>
 <li>https://build-podcast.com/</li>
 <li>from book Getting started with Gulp by Travis Maynard</li>
 </ul>
 
-<h2>What is gulp</h2>
+## What is gulp
 <p>Gulp is a streaming JS build system built with node.js; it leverages the power of streams and code-over-configuration to automate, organize, and run development tasks very quickly and efficiently</p>
 
 <h2>What is node.js?</h2>
 <p>Node.js commonly referred to as node, is a powerful Js platform that is built on top of Google Chrome's Js runtime engine, V8. This give us the ability to write Js code on a server, or in our case, on local machine</p>
 <p>Node.js ships with npm, a companion package manager that facilitates the installation, storage, and creation of modular components that you can use to create applications.</p>
 
-<h2>Why use gulp?</h2>
+## Why use gulp?
 <ul>
   <li>project automation</li>
   <li>streams = "pipe"</li>
   <li>code over config</li>
 </ul>
 
-<h2>Command line</h2>
+## Command line
 <p>Command reference</p>
 <ul>
   <li>ls - listening files and folders</li>
@@ -30,7 +31,7 @@ A demonstration how to use and install Gulp, the streaming build system.
   <li>sudo mkdir folder_name </li>
 </ul>
 
-<h2>Anatomy of a gulpfile</h2>
+## Anatomy of a gulpfile
 <p>Gulp started with 4 main methods </p>
 <ul>
   <li>task(string, function) method is a basic wrapper for which we create our tasks. A string value representing the name of task.</li>
@@ -42,7 +43,7 @@ A demonstration how to use and install Gulp, the streaming build system.
 </ul>
 <br>
 
-<h2>Node.js modules</h2>
+## Node.js modules</h2>
 <p>Static server</p>
 <p>Browser sync - handle browser refreshing and sync up every action that is performed on your pages across any device po your local network.</p>
 <p>Browserify - bundle modules</p>
