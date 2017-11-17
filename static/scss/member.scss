@@ -43,6 +43,10 @@ body {
     list-style: none;
     padding: 0;
   }
+
+  a {
+    color: var(--color-default);
+  }
 }
 
 .member-item {
@@ -51,6 +55,7 @@ body {
   box-shadow: 0 0 0 1px #fff inset;
   border: 1px solid var(--color-secondary);
   border-radius: var(--border-radius);
+  background: linear-gradient(315deg,var(--color-secondary),#fff,green);
 
   .wrapper {
     //margin: 40px 20px 20px 20px;
@@ -59,6 +64,7 @@ body {
     box-shadow: 0 0 0 1px #fff inset;
     background: var(--color-primary);
     border-radius: 6px;
+    background: linear-gradient(315deg,lighten(#E7EBF0,15%),var(--color-secondary),#fff);
   }
 
   .content {
@@ -79,13 +85,22 @@ body {
   }
 
   .numbers {
+    border-radius: 0 0 6px 6px;
     display: flex;
     flex-flow: row-reverse;
-    border-bottom: 1px solid darken(#E7EBF0, 1%);
+    border: 1px solid darken(#E7EBF0, 6%);
+    //border-top: 0;
     font-size: 13px;
-
+    background: lighten(#B9C5CE, 20%);
     div {
       padding: 10px 15px;
+    }
+    span {
+      display: block;
+      text-align: center;
+      &:first-of-type {
+        font-size: 18px;
+      }
     }
   }
 
@@ -94,8 +109,9 @@ body {
     //color: var(--color-tertiary100);
     font-size: 14px;
     img {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px 0 0;
     }
   }
   .name {
@@ -127,7 +143,17 @@ body {
     width: 120px;
     height: 120px;
   }
-  .project {
 
+  .project {
+    text-align: right;
+    color: var(--color-default);
+    //border-bottom: 1px solid darken(#E7EBF0, 1%);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    background: lighten(#B9C5CE, 25%);
+    span {
+      color: var(--color-font);
+    }
   }
 }
